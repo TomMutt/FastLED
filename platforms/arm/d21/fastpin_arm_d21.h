@@ -210,6 +210,16 @@ _DEFPIN_ARM(23, 1, 23); _DEFPIN_ARM(24, 0,  1); _DEFPIN_ARM(25, 0,  0);
 
 #define HAS_HARDWARE_PIN_SUPPORT 1
 
+#elif defined(ADAFRUIT_FEATHER_M4_EXPRESS)
+
+#define MAX_PIN 19
+
+_DEFPIN_ARM(11, 0, 21); _DEFPIN_ARM(13, 0, 23);
+
+#define SPI_DATA 10
+#define SPI_CLOCK 22
+#define HAS_HARDWARE_PIN_SUPPORT 1
+
 #endif
 
 
